@@ -3,7 +3,7 @@ class Home(object):
 
     def __init__(self, driver):
         self.driver = driver
-        self.sigin_button = driver.find_element(By.LINK_TEXT, "Sign in")
+        self.btn_signin = driver.find_element(By.XPATH, '/html/body/div[1]/header/div/div[2]/div[2]/a[1]')
         self.input_search=driver.find_element(By.NAME,'q')
         self.input_username=driver.find_element(By.ID,'user[login]')
         self.input_email=driver.find_element(By.ID,'user[email]')
@@ -12,7 +12,7 @@ class Home(object):
 # home page locators defining
 
     def to_login(self):
-        self.sigin_button.click()
+        self.btn_signin.click()
 
     def fill_username(self,username):
         self.input_username.clear()

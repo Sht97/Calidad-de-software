@@ -17,14 +17,14 @@ class TestOtrotest():
     self.driver.get("https://github.com/")
     self.driver.set_window_size(1274, 1053)
     self.driver.find_element(By.LINK_TEXT, "Sign in").click()
-    self.driver.find_element(By.ID, "login_field").send_keys("danielf.r97@gmail.com")
-    self.driver.find_element(By.ID, "password").send_keys("Fe63b4366c140")
+    self.driver.find_element(By.ID, "login_field").send_keys("Danielf.r97@hotmail.com")
+    self.driver.find_element(By.ID, "password").send_keys("PruebaSelenium.")
     self.driver.find_element(By.NAME, "commit").click()
     self.driver.find_element(By.LINK_TEXT, "New").click()
     self.driver.find_element(By.ID, "repository_name").click()
-    self.driver.find_element(By.ID, "repository_name").send_keys("Paola")
+    self.driver.find_element(By.ID, "repository_name").send_keys("Calidad")
     self.driver.find_element(By.ID, "repository_description").click()
-    self.driver.find_element(By.ID, "repository_description").send_keys("te quiero mucho")
+    self.driver.find_element(By.ID, "repository_description").send_keys("Descripción")
 
   
 a=TestOtrotest()
